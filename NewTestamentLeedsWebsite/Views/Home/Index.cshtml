@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section featured {
+    <section class="featured">
+        <div id="horizontal-scroll"/>
+        <div id="welcomeTextContainer">
+            <!--<p>welc&nbsp;&nbsp;me
+                <img src="~/Content/Big-Logo.png" />
+            </p>-->
+        </div>
+        <div id="bannerFooter">
+            <h4>Please share your thoughts, ideas and suggestions about the events held throughout the year.</h4>
+        </div>
+        <!--<div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                To learn more about ASP.NET MVC visit
+                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
+                If you have any questions about ASP.NET MVC visit
+                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
+            </p>
+        </div>-->
+    </section>
+}
+<div class="outerTextContainer">
+    <div class="textContainer">
+    <h3>All our church activities services and programmes are so ordered as to encourage every person to have a divine encounter with God.</h3>
+    <h4 class="homeSubStatement">Founded in England in 1953, we currently have over 130 branches and missions in most cities of England and Wales, representing the diversity of ethnicity of the communities we serve.</h4>
+    </div>
+</div>
+<div class="outerTextContainer">
+    <div class="eventDisplayContainer textContainer">
+    <h3 class="whiteHeading">Upcoming Events</h3>
+    <div id="evtBackButton"></div>
+    @Html.Action("_FeaturedEvents", "Home")
+    <div id="evtNextButton"></div>
+    </div>
+</div>
+<div class="outerTextContainer">
+    <div class="findUsContainer textContainer">
+    <h3 class="whiteHeading">Find Us</h3>
+    <h5 class="whiteHeading">Less than 10 minutes from Leeds City Centre, the New Testament Church of God (Leeds) is found on a number of frequently serviced bus routes. The 12, 13 and 13A services from New Briggate by Sports Direct on the Headrow wil take you to the beginning of Easterly Road leaving you a minute walk to the door of the church.</h5>
+    </div>
+</div>
+<div class="serviceTimesContainer outerTextContainer">
+    <div class="textContainer">
+        <h3 class="whiteHeading">Sunday Service Times</h3>
+        <h5 class="whiteHeading">Sunday Morning Worship Service: 11:00am - 1:00pm<br />Sunday Evening Worship: 6:00pm - 8:00pm</h5>
+    </div>   
+</div>
+<div class="eventsPanelBackground"></div>
+<div class="homeBackground" />

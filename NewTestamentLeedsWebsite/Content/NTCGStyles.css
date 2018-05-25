@@ -1,0 +1,426 @@
+﻿@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+/*--------STANDARD ELEMENTS------------*/
+ul {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+a {
+    color: #333;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+
+    a:link, a:visited,
+    a:active, a:hover {
+        color: #333;
+    }
+
+    a:hover {
+        background-color: #c7d1d6;
+    }
+
+h3 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 2.8em;
+    text-align: center;
+}
+
+/*-------------------------BACKGROUND-----------------------------*/
+.homeBackground {
+    background: url('../Content/images/homeBehind.png');
+    width: 100%;
+    /*height: 300%;  adjust the height according to the length of contents */
+    /* height: 100%; */
+    top: 1450px;
+    left: 0;
+    z-index: -2;
+    position: absolute;
+    height: 1100px;
+}
+
+/*------------------BANNER ANIMATION-------------------------------*/
+
+#horizontal-scroll {
+    width: 100%;
+    height: 372px;
+    background: url('Images/Banner-PNG-8.png');
+    -webkit-animation: backgroundScroll 30s linear infinite;
+    -moz-animation: backgroundScroll 30s linear infinite;
+    -ms-animation: backgroundScroll 30s linear infinite;
+    -o-animation: backgroundScroll 30s linear infinite;
+    animation: backgroundScroll 30s linear infinite;
+    display: -moz-groupbox;
+    display: flow-root;
+}
+
+@-webkit-keyframes backgroundScroll {
+from {background-position: -1920px 0;}
+to {background-position: 0 0;}
+}
+        
+@keyframes backgroundScroll {
+from {background-position: -1920px 0;}
+to {background-position: 0 0;}
+}
+
+/*------------------------------------------------------------------------*/
+
+
+/*-------------------------HEADER--------------------------------*/
+.float-right {
+    float: right;
+    /*border-style:solid;
+    border-color:Lime;*/
+    display: none;
+}
+
+.float-left {
+    float: left;
+    /*border-style:solid;
+    border-color: Aqua;*/
+    display: block;
+    padding-left: 1em;
+    padding-top: 0.3em;
+}
+
+#login {
+        font-size: .85em;
+        margin: 0 0 12px;
+        text-align: center;
+    }
+
+        #login ul {
+            margin: 5px 0;
+            padding: 0;
+        }
+
+        #login li {
+            display: inline;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #login a {
+            background: none;
+            color: #999;
+            font-weight: 600;
+            margin: 2px;
+            padding: 0;
+        }
+
+        #login a:hover {
+            color: #333;
+        }
+
+/*-----------------------NAVIGATION FOR MOBILE---------------------------*/
+/* This has to be above for now until we split to two seperate style sheets*/
+.nav-mobile {
+	display:none; /* Hide from browsers that don't support media queries */
+	cursor:pointer;
+	position:absolute;
+	top:0;
+	right:0;
+	background: #333 url(../Content/img/nav.svg) no-repeat center center;
+	background-size:18px;
+	height: 52px;
+	width: 52px;
+}
+
+/* -------------------------NAVIGATION MENU ----------------------------- */
+nav {
+    /* margin-bottom: 5px; */
+    display:block;
+}
+
+.navigation-tom{
+    /* clear: right; */
+    /* width: 100%; */
+}
+
+.sub-navigation{
+    clear: both;
+    padding-top: 0px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    position: relative;
+    top: -295px;
+}
+
+ul#menu {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    padding-right: 2.8em;
+    padding-left: 0.5em;
+    /* padding-bottom: 1em; */
+    text-align: left;
+    display: inline-block;
+    float: right;
+}
+
+ul#menu li {
+    display: inline-block;
+    zoom: 1;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding-top: .7em;
+    padding-right: 2.5em;
+    margin-top: 0.1em;
+    margin-bottom: -0.5em;
+}
+
+ /*ul#menu li:hover .nav-submenu {
+	display:block;
+}*/
+
+ul#menu li a {
+    text-decoration: none;
+    letter-spacing: .1em;
+    font-size: 13pt;
+}
+
+.nav-submenu{
+    display:none;
+}
+
+.nav-submenu li
+{
+    padding-left: .7em !important;
+    padding-bottom: .1em !important;
+    border-top: #2b2b2b;
+    border-top-style: solid;
+    border-top-width: thin;
+    text-align: left;
+    left: 0;
+} 
+    
+.nav-submenu li:hover{
+    background-color: #CCCCCC !important;
+}
+    
+.nav-submenu li a{
+    display: block;
+    color: #000000;
+    letter-spacing: .2em !important;
+    text-transform: uppercase; 
+    text-decoration: none;
+}
+
+/* Mobile navigation, clickable area for revealing <ul> */
+.nav-click {
+	position:absolute;
+	top:0;
+	right: 0;
+	height:49px;
+	width: 49px;
+}
+.nav-click i {
+	display:block;
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	background:url(../Content/img/drop.svg) no-repeat center center;
+	background-size:20px;
+}
+
+.nav-rotate {
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+
+@media only screen and (min-width: 1073px) {
+    ul#menu {
+        display:inline-block !important;
+
+    }
+
+    .nav-submenu {
+        display: none !important;
+    }
+
+    .nav-click {
+        display:none;
+    }
+
+    ul#menu li {
+        display: inline-block;
+        list-style: none;
+        padding-top: .7em;
+        padding-left: .7em;
+        padding-right: .7em;
+        padding-bottom: .6em;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1073px) {
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding:50px 0 0;
+	}
+	ul#menu {
+		display:none;
+		background-color: currentColor;
+		padding-bottom: .5em;
+	}
+	ul#menu li {
+		width:100%;
+		float:none;
+		background-color: #333333 !important;
+		padding-bottom: 1em;
+	}
+	ul#menu li a {
+		padding:15px;
+		color: white;
+	}
+	.nav-click {
+		display:block;
+	}
+
+    .nav-click:hover {
+	    background-color:#000000;
+    }
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	ul#menu li:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+
+    .nav-submenu li{
+		padding-left:2em;
+	}
+
+    .featured {
+        padding-top:0px;
+    }
+
+    h3 {
+        font-size: 2.4vw;
+    }
+
+    h4 {
+        /* font-size: 1.5vw !important; */
+    }
+
+    h5 {
+
+    }
+
+    #horizontal-scroll {
+        width:100%;
+        height: 34.0vw;
+        background-size: 540vw, 300vw;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 740px) {
+    #bannerFooter h4 {
+        font-size: 10pt !important;
+    }
+}
+
+
+
+/*----------------------------BANNER TEXT----------------------------------*/
+
+#welcomeTextContainer {
+    position:relative;
+    height: inherit;
+    width: inherit;
+}
+
+    #welcomeTextContainer p {
+        font-size: 11em;
+        text-transform:uppercase;
+        margin: inherit;
+        text-align: center;
+        color: white;
+        letter-spacing: .2em;
+        padding-top: .2em;
+        position: relative;
+        text-shadow: #ffffff 0 0 10px;
+    }
+
+    #welcomeTextContainer p img {
+        position: absolute;
+        float: left;
+        left: 53%;
+        top: .35em;
+        width: 150px;
+    }
+
+#bannerFooter {
+    display:block;
+    background-color: #cb9000;
+    /* height: 3em; */
+    /* margin-top: -1.4em; */
+    padding: 0.1em;
+}
+
+    #bannerFooter h4 {
+        font-size: 1.2em;
+        color: white;
+        text-align: center;
+        font-family: Montserrat;
+        /* padding-top: .8em; */
+    }
+
+/*-------------------------------EVENTS----------------------------------------*/
+.eventsPanelBackground{
+    width: 100%;
+    height: 80%;
+    background-color: #000000;
+    background: url("../Content/images/news_panel_back.png") repeat;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 800px;
+    z-index: -1;
+}
+
+.currentEventDisplay {
+    height: 450px;
+    border-style:solid;
+    border-width:medium;
+    border-color:aqua;
+}
+
+/*-------------------------------------FIND US---------------------------------------*/
+.findUsContainer {
+
+padding-top: 0.5em;
+
+text-align: -webkit-center;
+
+padding-bottom: 2em;
+}
+
+/*----------------------------------SERVICE TIMES-------------------------------------*/
+.serviceTimesContainer {
+
+background-color: #cb9000;
+
+margin-left: 0px;
+
+height: 290px;
+}

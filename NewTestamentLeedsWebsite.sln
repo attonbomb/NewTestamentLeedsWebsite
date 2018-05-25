@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTestamentLeedsWebsite", "NewTestamentLeedsWebsite\NewTestamentLeedsWebsite.csproj", "{509BDAC7-57F1-4EF8-9010-3F3B887FAB39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTestamentLeedsWebsite.Tests", "NewTestamentLeedsWebsite.Tests\NewTestamentLeedsWebsite.Tests.csproj", "{1DA4D46C-0BB0-4F3E-B226-6F23B5F371CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{509BDAC7-57F1-4EF8-9010-3F3B887FAB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{509BDAC7-57F1-4EF8-9010-3F3B887FAB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{509BDAC7-57F1-4EF8-9010-3F3B887FAB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{509BDAC7-57F1-4EF8-9010-3F3B887FAB39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA4D46C-0BB0-4F3E-B226-6F23B5F371CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA4D46C-0BB0-4F3E-B226-6F23B5F371CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA4D46C-0BB0-4F3E-B226-6F23B5F371CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA4D46C-0BB0-4F3E-B226-6F23B5F371CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
